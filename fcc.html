@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #intro {
+            text-align: left;
+            margin-left: 30px;
+            margin-top: 20px;
+            font-size: 30px;
+            font-style: italic;
+        }
+        #navbar{
+            
+            
+  position: fixed;
+  min-width: 290px;
+
+  
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+
+           
+  
+
+        }
+        #main-doc{
+           
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+
+        }
+        #navbar li {
+            padding-top: 20px;
+        }
+        @media screen and (min-width: 992px){
+  a {
+    color: #AF007A;
+    text-decoration: none;
+  }
+  a:visited {color: #783263;}
+  a:hover {color: #783263;}
+}
+
+    </style>
+</head>
+<body>
+    <aside>
+        <nav id="navbar">
+            <header id="intro"> Introduction to Html  </header>
+            <ol style="list-style-type: none">
+                <li> <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <hr>
+                <li> <a class="nav-link" href="#Prerequiste">Prerequiste</a>
+                </li>
+                <hr>
+                <li> <a class="nav-link" href="#WHAT_IS_HTML?">WHAT IS HTML?</a>
+                </li>
+                <hr>
+                <li> <a class="nav-link" href="#HTML_HEAD">HTML HEAD</a>
+                </li>
+                <hr>
+                <li> <a class="nav-link" href="#HTML_TEXT_FUNDAMENTALS">HTML TEXT FUNDAMENTALS</a>
+                </li>
+                <hr>
+                <li> <a class="nav-link" href="#CREATING_HYPERLINKS">CREATING HYPERLINKS</a>
+                </li>
+                <hr>
+                <li> <a class="nav-link" href="#PLANNING_A_WEBSITE">PLANNING A WEBSITE</a>
+                </li>
+                 
+            
+
+            </ol>
+
+
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                  <p>
+                    In this article we cover the absolute basics of HTML, to get you started. We define elements, attributes, and all the other important terms you may have heard, and where they fit into the language. We also show how an HTML element is structured, how a typical HTML page is structured, and explain other important basic language features. Along the way, we'll play with some HTML to get you interested!
+                  </p>
+            
+                  <p>
+                    The Prerequisites and Objectives - 
+                  </p>
+                  <ul>
+                    <li>
+                        Prerequisites: Basic computer literacy, basic software installed, and basic knowledge of working with files.
+                    </li>
+                    <li>
+                        Objective: To gain basic familiarity with the HTML language, and get some practice writing a few HTML elements.
+                    </li>
+                  </ul>
+                </article>
+              </section>
+              <section class="main-section" id="Prerequiste">
+                <header>Prerequiste</header>
+                <article>
+                  <p>This guide assumes you have the following basic background:</p>
+            
+                  <ul>
+                    <li>
+                      A general understanding of the Internet and the World Wide Web (WWW).
+                    </li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>
+                      A basic understanding of how to operate a computer
+                    </li>
+                  </ul>
+                </article>
+                <div id="codes">
+                    <code>	&nbsp; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML"&gt;<br>
+                            &nbsp;&nbsp;  &lt;img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage"&gt;<br>
+                    &nbsp; &lt;/a&gt;
+                    </code>
+                </div>
+              </section>
+              <section class="main-section" id="WHAT_IS_HTML?">
+                <header>WHAT IS HTML?</header>
+                <article>
+                  <p>
+                    HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell your browser how to structure the web pages you visit. It can be as complicated or as simple as the web developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear or act a certain way. The enclosing tags can make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on. 
+                  </p>
+            
+                  <p>
+                    The main parts of our element are:
+                  </p>
+                  <ol>
+                    <li>
+                        The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the start of the paragraph is.
+                    </li>
+                    <li>
+                        The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.
+
+                    </li>
+                    <li>
+                        The content: This is the content of the element, which in this case is just text.
+
+                    </li>
+                    <li>
+                        The element: The opening tag plus the closing tag plus the content equals the element.
+
+                    </li>
+                  </ol>
+                  
+                </article>
+                <div id = "codes">
+                    <code>	&nbsp; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML"&gt;<br>
+                        &nbsp;&nbsp;  &lt;img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage"&gt;<br>
+                &nbsp; &lt;/a&gt;
+                </code>
+                </div>
+                
+              </section>
+              <section class="main-section" id="HTML_HEAD">
+                <header>HTML HEAD</header>
+                <p>
+                    The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page title>, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document.) In this article we'll cover all of the above and more, in order to give you a good basis for working with markup.
+
+                        The HTML head is the contents of the head> element — unlike the contents of the body> element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document.
+                        
+                        We've already seen the title> element in action — this can be used to add a title to the document. This however can get confused with the h1> element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title. But they are different things!
+                </p>
+                <ul>
+                    <li>
+                        The title> element is metadata that represents the title of the overall HTML document (not the document's content.)
+                    </li>
+                    <li>
+                        The h1> element appears on the page when loaded in the browser — generally this should be used once per page, to mark up the title of your page content (the story title, or news headline, or whatever is appropriate to your usage.)
+
+                    </li>
+                </ul>
+                <div id = "codes">
+                    <code>	&nbsp; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML"&gt;<br>
+                        &nbsp;&nbsp;  &lt;img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage"&gt;<br>
+                &nbsp; &lt;/a&gt;
+                </code>
+                </div>
+              </section>
+              <section class="main-section" id="HTML_TEXT_FUNDAMENTALS">
+                <header>HTML TEXT FUNDAMENTALS</header>
+                <p>
+                    One of HTML's main jobs is to give text structure and meaning (also known as semantics) so that a browser can display it correctly. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
+
+                    Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.Structured content makes the reading experience easier and more enjoyable.
+                </p>
+                <p>
+                    In HTML, each paragraph has to be wrapped in a <p > element and each heading has to be wrapped in a heading element. There are six heading elements — &lt h1 &gt, &lt h2 &gt, &lt h3 &gt, &lt h4 &gt,&lt h5 &gt, and &lt h6 &gt. Each element represents a different level of content in the document; h1 represents the main heading, h2 represents subheadings, h3 represents sub-subheadings, and so on. As an example, in a story, h1 would represent the title of the story,h2 would represent the title of each chapter and h3 would represent sub-sections of each chapter.
+                </p>
+                <p>
+                    It's really up to you what exactly the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:
+                </p>
+                <ul>
+                    <li>
+                        Preferably you should just use a single &lt h1 &gt per page — this is the top level heading, and all others sit below this in the hierarchy.
+                        
+                    </li>
+                    <li>
+                        Make sure you use the headings in the correct order in the hierarchy. Don't use &lt h3 &gt to represent subheadings, followed by &lt h2 &gt to represent sub-subheadings — that doesn't make sense and will lead to weird results.
+
+                    </li>
+                    <li>
+                        Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (i.e., a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.
+
+                    </li>
+                </ul>
+                <div id = "codes">
+                    <code>	&nbsp; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML"&gt;<br>
+                        &nbsp;&nbsp;  &lt;img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage"&gt;<br>
+                &nbsp; &lt;/a&gt;
+                </code>
+                </div>
+              </section>
+              <section class="main-section" id="CREATING_HYPERLINKS">
+                <header>CREATING HYPERLINKS</header>
+                <article>
+                  <p>
+                    Hyperlinks are one of the most exciting innovations the Web has to offer. Well, they've been a feature of the Web since the very beginning, but they are what makes the Web a Web — they allow us to link our documents to any other document (or other resource) we want to, we can also link to specific parts of documents, and we can make apps available at a simple web address (contrast this to native apps, which have to be installed and all that business.) Just about any web content can be converted to a link, so that when clicked (or otherwise activated) it will make the web browser go to another web address (URL).
+                  </p>
+            
+                  <p>
+                    A basic link is created by wrapping the text you want to turn into a link inside an &lt;a&gt; element, and giving it an href attribute (also known as a Hypertext Reference , or target) that will contain the web address you want the link to point to.
+                  </p>
+            
+                  <p>
+                    Another attribute you may want to add to your links is title; this is intended to contain supplementary useful information about the link, such as what kind of information the page contains, or things to be aware of.
+
+you can turn just about any content into a link, even block level elements. If you had an image you wanted to turn into a link, you could just put the image between &lt;a&gt; &lt;/a&gt; tags. Example:
+                  </p>
+            
+                  <div id="codes">
+                    <code>	&nbsp; &lt;a href="https://www.mozilla.org/en-US/"&gt;<br>
+                            &nbsp;&nbsp;  &lt;img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage"&gt;<br>
+                    &nbsp; &lt;/a&gt;
+                    </code>
+                    </div>
+                </article>
+              </section>
+              <section class="main-section" id="PLANNING_A_WEBSITE">
+                <header>PLANNING A WEBSITE</header>
+                <article>
+                  <p>
+                    Once you've planned out the structure of a simple webpage, the next logical step is to try to work out what content you want to put on a whole website, what pages you need, and how they should be arranged and link to one another for the best possible user experience. This is called Information architecture. In a large, complex website, a lot of planning can go into this process, but for a simple website of a few pages, this can be fairly simple, and fun!
+
+
+                  </p>
+            
+                  <ol>
+                    <li>
+                        Bear in mind that you'll have a few elements common to most (if not all) pages — such as the navigation menu, and the footer content. If your site is for a business, for example, it's a good idea to have your contact information available in the footer on each page. Note down what you want to have common to every page.
+Next, draw a rough sketch of what you might want the structure of each page to look like (it might look like our simple website above). Note what each block is going to be.
+                        
+                    </li>
+                    <li>
+                        Now, brainstorm all the other (not common to every page) content you want to have on your website — write a big list down.
+
+                    </li>
+                    <li>
+                        Next, try to sort all these content items into groups, to give you an idea of what parts might live together on different pages. This is very similar to a technique called Card sorting.
+
+                    </li>
+                    <li>
+                        Now try to sketch a rough sitemap — have a bubble for each page on your site, and draw lines to show the typical workflow between pages. The homepage will probably be in the center, and link to most if not all of the others; most of the pages in a small site should be available from the main navigation, although there are exceptions. You might also want to include notes about how things might be presented.
+
+                    </li>
+                  </ol>
+                </article>
+                <div id = "codes">
+                    <code>	&nbsp; &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML"&gt;<br>
+                        &nbsp;&nbsp;  &lt;img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage"&gt;<br>
+                &nbsp; &lt;/a&gt;
+                </code>
+                </div>
+              </section>
+
+        </main>
+        
+
+
+    </aside>
+    
+</body>
+</html>
