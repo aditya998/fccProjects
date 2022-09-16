@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Original Trombones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <style>
+    .header{
+      display: flex;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      min-height: 75px;
+      padding: 0px 20px;
+      background-color: white;
+      flex-direction: row;
+     
+  }
+#nav{
+      width: 50%;
+  
+  }
+#header-img{
+  display:flex;
+}
+#nav ul{
+  list-style:none;
+  display: flex;
+  justify-content:space-between;
+  text-align:right;
+      
+      
+    }
+.home-made{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 60px;
+       
+    }
+.home-made input{
+        width: 300px;
+        Margin-bottom: 10px;
+    }
+.home-made button{
+        width: 150px;
+        background-color: rgba(197, 162, 45, 0.664);
+        height: 35px;
+        font-style: bold;
+        
+    }
+.points{
+        height: 300px;
+        margin: auto;
+        width: 50%;
+        
+    }
+    
+    
+    
+   
+.three{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+        
+    }
+.three li{
+        list-style: none;
+    }
+.bottom-nav{
+        display: flex;
+        justify-content: right;
+        margin-right: 100px;
+        padding-top: 15px 10px;
+        list-style: none;
+
+        
+        
+        
+    }
+.copyright{
+        display: flex;
+        justify-content: end;
+        margin-right: 100px;
+        padding: 0 0 0 0;
+
+    }
+#footer{
+        margin: 30px 80px 0px 80px;
+        background-color: gray;
+        
+    }
+.icons{
+        color: rgba(98, 179, 98, 0.842);
+        display: flex;
+        flex-direction: column;
+        
+    }
+.text{
+        display: flex;
+        flex-direction: column;
+
+    }
+.video{
+        margin-top: 80px;
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        
+    }
+.three{
+       
+        
+        text-align: left;
+        margin-top: 60px;
+        display: flex;
+         flex-direction: row;
+          justify-content: center;
+    }
+.col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        width: calc(100% / 3);
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+.col button{
+        background-color: yellow;
+    }
+    .bottom-nav > ul > li {
+  padding: 0 10px;
+}
+.bottom-nav ul{
+    list-style: none;
+    display: flex;
+}
+.line-1{
+    margin: 0;
+    padding-top: 10px;
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+@media (max-width: 800px){}
+  .col {
+    flex-direction: column;
+  }
+
+
+
+  </style>
+  <header>
+    <div class="header">
+      <img id="header-img" width="300px" height="60px" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo" />
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+
+      </nav>
+    </div>
+    <div class="home-made">
+      <h2>Handcrafted, home-made masterpieces</h2><br>
+      <input type="email" placeholder="Enter your Email"><br>
+      <button class="button"><strong>GET STARTED</strong></button>
+    </div>
+
+  </header>
+</head>
+
+<body>
+
+  <div class="points" id="features">
+    <section class="icons">
+      <i class="fa-solid fa-fire-flame-curved"></i>
+    </section>
+    <section class="text">
+      <h2>Premium Materials</h2>
+
+      <p> Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+
+    </section>
+    <section class="icons">
+      <i class="fa-solid fa-truck"></i>
+    </section>
+    <section class="text">
+      <h2>Fast Shipping</h2>
+
+      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    </section>
+
+    <section class="icons">
+      <i class="fa-solid fa-battery-full"></i>
+    </section>
+    <section class="text">
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </section>
+  </div>
+  <section class="video" id="how-it-works">
+    <iframe height="315" width="420" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="three">
+    <div class="col">
+      <h4 class="line-1">Tenor Trombone</h4>
+      <h3>600$</h3>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+    <div class="col" id="pricing">
+      <h4 class="line-1">Bass Trombone</h4>
+      <h3>900$</h3>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+    <div class="col">
+      <h4 class="line-1">Valve Trombone</h4>
+      <h3>1200$</h3>
+      <ul>
+        <li>Plays similar to a Trumpet</li>
+        <li>Great for Jazz Bands</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="bottom-nav">
+      <ul>
+        <li> <a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2016, Original Trombones</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
