@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>FCC:Survey Form</title>
+    <style> 
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+        body {
+          font-family: 'Poppins', sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.4;
+          color: white;
+          margin: 0;
+        }
+            body::before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+          background: rgb(4, 4, 141);
+          background-image: linear-gradient(
+              115deg,
+              rgba(58, 58, 158, 0.8),
+              rgba(136, 136, 206, 0.7)
+            ),
+            url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        
+        #head{
+                display: flex;
+                justify-content: center;
+            }
+        .container{
+                display: flex;
+                justify-content: center;
+                background: rgb(25, 20, 41);
+                box-shadow: #495057;
+                width: 65%;
+                margin: 3.125rem auto 0 auto;
+                opacity: 0.8;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                
+            }
+        
+        #head{
+                color: white;
+        
+            }
+        .input-textarea {
+          min-height: 120px;
+          width: 97%;
+          padding: 0.625rem;
+          
+        }
+        .submit-button {
+          display: block;
+          width: 101%;
+          
+          padding: 0.75rem;
+          background: rgb(90, 158, 90);
+          margin-top: 18px;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        .form-group {
+          margin: 1rem auto 1.25rem auto;
+          padding: 0.4rem;
+        }
+        
+        
+        .form-control {
+          display: block;
+          width: auto;
+          height: 2.375rem;
+          padding: 0.375rem 0.75rem;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+          
+        }
+        .input-radio,
+        .input-checkbox{0 
+        
+          display: inline-block;
+          margin-right: 0.625rem;
+          min-height: 1.25rem;
+          min-width: 1.25rem;
+        }
+        #dropdown{
+          width: 100%;
+          height: 3.250rem;
+          padding: 0.375rem 0.75rem;
+          display: block;
+        }
+        .label{
+          padding-bottom: 10px;
+        }
+        input{
+          padding-top: 10px;
+        } 
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }   
+        </style>
+  </head>
+<body>
+<div id="head">
+<header>
+    
+    <h1>freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+</header>
+</div>
+    <div class="container">
+
+        <form>
+            
+
+            <div class="form-group">
+            <label class="label" for="your name">Your Name<br><input type="text"  placeholder="Enter your name" class="form-control" required size="100%"></label>
+            </div>
+            <div class="form-group">
+            <label for="Email">Your Email <br><input type="email" placeholder="Enter your email" class="form-control" required size="100%"> </label>
+            </div>
+            <div class="form-group">
+            <label for="age">Age(optional) <br><input type="number" min="10" max="99" class="form-control" placeholder="Enter your age"  size="100%"> </label>
+            </div>
+            <div class="form-group">
+            <label >Which option best describes your current role?</label>
+            <select id="dropdown" class="form-control" required >
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="Full-time-job">Full time job</option>
+                <option value="Full-time-learner">Full time learner</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+            <div class="form-group">
+            <label>Would you recommend freeCodeCamp to a friend?</label><br>
+            <input type="checkbox" class="input-radio" name="Definitely">Definitely<br>
+            <input type="checkbox" class="input-radio"  name="Maybe">Maybe<br>
+            <input type="checkbox" class="input-radio"  name="Not-sure">Not sure<br>
+            <label>What is your favorite feature of freeCodeCamp?</label>
+            <select class="form-control" id="dropdown">
+                <option disabled selected value>Select an option</option>
+                <option value="Challenges">Challenges</option>
+                <option value="Project">Project</option>
+                <option value="Community">Community</option>
+                <option value="Open-source">Open source</option>
+                
+            </select>
+            </div>
+            <div class="form-group">
+
+            <label>What would you like to see improved? (Check all that apply)</label><br>
+            <input type="checkbox" class="input-checkbox"  name="Front-end-projects"> Front-end-projects<br> 
+            <input type="checkbox" class="input-checkbox"  name="Back-end Projects"> Back-end Projects<br>
+            <input type="checkbox" class="input-checkbox"  name="Data Visualization"> Data Visualization<br>
+            <input type="checkbox" class="input-checkbox"  name="Challenges"> Challenges<br>
+            <input type="checkbox" class="input-checkbox"  name="Open Source Community"> Open Source Community<br>
+            <input type="checkbox" class="input-checkbox"  name="Gitter help rooms"> Gitter help rooms<br>
+            <input type="checkbox" class="input-checkbox"  name="Videos"> Videos<br>
+            <input type="checkbox" class="input-checkbox"  name="City Meetups"> City Meetups<br>
+            <input type="checkbox" class="input-checkbox"  name="Wiki"> Wiki <br>
+            <input type="checkbox" class="input-checkbox"  name="Forum"> Forum <br>
+            <input type="checkbox" class="input-checkbox"  name="Additional Courses"> Additional Courses<br>
+            </div>
+            <div class="form-group">
+            <label >Any comments or suggestions?</label>
+            <input  type="text" class="input-textarea">
+            <br>
+            <button type="submit" class="submit-button" >Submit</button>
+            </div>
+            
+        </form>
+    </div>
+
+    
+
+</body>
+    
+       
+
+
+</html>
